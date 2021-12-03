@@ -19,16 +19,16 @@ class _MyLiquidSwipeState extends State<MyLiquidSwipe> {
       ),
       body: LiquidSwipe(
         pages: [
-          MyWidget('assets/imgs/squid_game1.jpg'),
-          MyWidget('assets/imgs/squid_game2.jpg'),
-          MyWidget('assets/imgs/squid_game3.jpg'),
+          myWidget('assets/imgs/squid_game1.jpg'),
+          myWidget('assets/imgs/squid_game2.jpg'),
+          myWidget('assets/imgs/squid_game3.jpg'),
         ],
         liquidController: controller,
       ),
     );
   }
 
-  Widget MyWidget(String image)=>
+  Widget myWidget(String image)=>
       Stack(
         children: [
           Container(
