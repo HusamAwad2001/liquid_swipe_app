@@ -8,7 +8,6 @@ class MyLiquidSwipe extends StatefulWidget {
 }
 
 class _MyLiquidSwipeState extends State<MyLiquidSwipe> {
-
   var controller = LiquidController();
 
   @override
@@ -29,14 +28,14 @@ class _MyLiquidSwipeState extends State<MyLiquidSwipe> {
     );
   }
 
-  Widget MyWidget(String img)=>
+  Widget MyWidget(String image)=>
       Stack(
         children: [
           Container(
             height: double.infinity,
             width: double.infinity,
             child: Image.asset(
-              img,
+              image,
               fit:BoxFit.cover,
             ),
           ),
